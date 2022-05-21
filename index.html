@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="index.css">
+    <title>E-commerce</title>
+    
+  </head>
+  <body>
+    <!-- deem page  -->
+    <div class="deem">
+
+    </div>
+     <!-- header and navbar  -->
+  <nav class="navbar">
+   <img class="logo" src="images/logo.svg" alt="">
+   <!-- navbar items -->
+   <div class="nav-items">
+      <p class="item">Collections</p>
+      <p class="item">Men</p>
+      <p class="item">Women</p>
+      <p class="item">About</p>
+      <p class="item">Contact</p>
+ </div>
+
+ <!-- navbar cart image and profile image   -->
+ <div class="nav-im">
+  <img class="cart" src="images/icon-cart.svg" alt="">
+  <img class="profile-pic" src="images/image-avatar.png" alt="">
+</div>
+            <!-- menu icon -->
+   <img class="menu" src="images/icon-menu.svg" alt="">
+      <!-- notification of number of items selected -->
+       <p class="item-num"></p>
+
+      <!-- cart notification for selected items  -->
+ <div class="main-cart">
+   <!-- empty cart notification  -->
+     <div class="check-cart">
+        <p class="cart-word">Cart</p>
+        <hr>
+       <p class="empty-cart-words">Your cart is empty</p>
+  </div>
+<!-- cart notification for product selected, number and price of total product  -->
+   <div class="checkout check-cart">
+       <p class="cart-word">Cart</p>
+       <hr>
+      <img class="checkout-img" src="images/image-product-1.jpg" alt="">
+      <p class="checkout-des">Fall limited Edition Sneakers</p>
+      <img class="delete-btn" src="images/icon-delete.svg" alt="">
+      <div class="checkout-price">
+        <span class="real-price">$125.00 </span>
+        <span>✖</span> 
+        <span class="multiplied-price"></span>
+     </div>
+        <button class="checkout-btn">Checkout</button>
+ </div>
+</div>
+  </nav>
+
+  <!-- slideshow for smaller screen  -->
+  <div class="slide-container">
+     <div class="slide">
+       <img src="images/image-product-1.jpg" alt="">
+     </div>
+     <div class="slide">
+      <img src="images/image-product-2.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="images/image-product-3.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="images/image-product-4.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="prevDiv">
+		<img class="prev" src="images/icon-previous.svg" alt="" onclick="plusSlides(-1)">
+	   </div>
+
+	   <div class="nextDiv">
+		<img class="next" src="images/icon-next.svg" alt="" onclick="plusSlides(1)">
+	   </div>
+
+      <!-- features  -->
+  <section class="features">
+    <!-- large and small images  -->
+  <div class="images">
+    <div class="image">
+      <img class="large-img" src="images/image-product-1.jpg" alt="">
+    </div>
+    <div class="sm-img">
+      <img class="pic sneakers" src="images/image-product-1.jpg" alt="">
+
+      <img class="pic sneakers" src="images/image-product-2.jpg" alt="">
+    
+      <img class="pic sneakers" src="images/image-product-3.jpg" alt="">
+    
+       <img class="pic sneakers" src="images/image-product-4.jpg" alt="">
+    </div> 
+  </div>
+
+   <!-- light Box images and exit icon -->
+  <div class="lightBox-images">
+    <img class="exit-lightBox" src="images/icon-close.svg" alt="">
+    <div class="LightBox-image">
+      <img class="lightBox-shoe1" src="images/image-product-1.jpg" alt="">
+    </div>
+    <div class="lightBox-sm-img">
+      <img class="lightBox-pic" src="images/image-product-1.jpg" alt="">
+
+      <img class="lightBox-pic" src="images/image-product-2.jpg" alt="">
+    
+      <img class="lightBox-pic" src="images/image-product-3.jpg" alt="">
+    
+       <img class="lightBox-pic" src="images/image-product-4.jpg" alt="">
+    </div> 
+  </div>
+ 
+ <!-- description of product and price  -->
+ <div class="price">
+   <h3>SNEAKER COMPANY</h3>
+   <h1>Fall Limited Edition Sneakers</h1>
+   <p class="des">The low-profile sneakers are your perfect casual wear 
+    companion. Featuring a durable rubber outer sole, they'll
+     withstand everything the weather can offer.</p>
+   <div class="shoe-price">
+     <h2>$ 125.00 </h2> 
+     <p class="percentage">50%</p>  
+     <p class="former-price">$ 250.00</p>
+   </div>
+   
+   <!-- increase and decrease selected product button and add to cart button -->
+   <div class="click">
+     <div class="incr">
+        <img class="minus" src="images/icon-minus.svg" alt="">
+        <p class="zero">0</p>
+        <img class="plus" src="images/icon-plus.svg" alt="">
+      </div>
+         <div class="add-cart">
+          <img src="images/icon-cart-white.svg" alt="">
+          <h4>Add to cart</h4>
+         </div>
+       </div>
+   </div>
+</section>
+
+<!-- slide bar section for smaller screen  -->
+<div class="slide-bar">
+  <img id="close-menu" src="images/icon-close.svg" alt="">
+  <ul>
+    <li><a href="#" class="navlink slide-link">Collections</a></li>
+    <li><a href="#" class="navlink slide-link">Men</a></li>
+    <li><a href="#" class="navlink slide-link">Women</a></li>
+    <li><a href="#" class="navlink slide-link">About</a></li>
+    <li><a href="#" class="navlink slide-link">Contact</a></li>
+  </ul>
+</div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
